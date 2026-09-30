@@ -21,6 +21,54 @@
   --color-secondary-700: #994535;
   --color-secondary-800: #5D180C;
   --color-secondary-900: #3F0300;
+
+  --color-musicBar: #EAE7E7;
+  --font-jakarta: "jakarta", sans-serif;
+  --font-jakarta: "jakarta-bold", sans-serif;
+  --font-great-vibes: "great-vibes", sans-serif;
+  --font-playfair: "playfair", sans-serif;
+  --font-garamond: "garamond", sans-serif;
+}
+
+@font-face {
+  font-family: 'jakarta';
+  src: url('./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'garamond';
+  src: url('./assets/fonts/EBGaramond-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'playfair';
+  src: url('./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'jakarta-bold';
+  src: url('./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'great-vibes';
+  src: url('./assets/fonts/GreatVibes-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
 
 html {
