@@ -1,6 +1,7 @@
 import MusicBar from '../assets/components/musicBar.tsx';
 import cardPhoto from '../assets/png/AB6AXuBGuohL2q-6sZ9MeVaxn3QRTsro3jzjn_9PTkeqFGCdIkNKC9q-EKCyu6e2fuu2AuoYFLip2sXB508lj6uaCKOSNZ4OmF9Vvu9U9NKkDwUsBRti1OuZjafeic_-XZc29pp_mPlw_sAlsZzZ2cNur27B8UuvhRdVGjdXbx26oyM3r-YfVGtt-R2x-Gb8pCRdDtOoAiGaD3xg9uNijSC0MlT5OW01rbntmejZKQ0ca9XrMBw0aK.png';
 import LocationPill from '../assets/components/locationPill.tsx';
+import MainGuest from '../assets/components/MainGuest.tsx';
 
 export default function Kartu() {
   return(
@@ -11,7 +12,7 @@ export default function Kartu() {
         <h1 className="font-playfair text-center font-bold text-7xl">Anand & Gayatri</h1>
         <h3 className="font-great-vibes text-primary-700 text-2xl text-center">Om Swastiastu</h3>
       </div>
-      <div className="px-10">
+      <div>
         <div className="relative overflow-hidden rounded-3xl">
           <div className="absolute top-4 left-4 z-10">
             <LocationPill />
@@ -24,6 +25,7 @@ export default function Kartu() {
           </div>
         </div>
       </div>
+      <MainGuest />
     </div>
   )
 }
