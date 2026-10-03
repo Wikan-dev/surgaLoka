@@ -2,7 +2,7 @@ import MusicBar from '../assets/components/musicBar.tsx';
 import cardPhoto from '../assets/png/AB6AXuBGuohL2q-6sZ9MeVaxn3QRTsro3jzjn_9PTkeqFGCdIkNKC9q-EKCyu6e2fuu2AuoYFLip2sXB508lj6uaCKOSNZ4OmF9Vvu9U9NKkDwUsBRti1OuZjafeic_-XZc29pp_mPlw_sAlsZzZ2cNur27B8UuvhRdVGjdXbx26oyM3r-YfVGtt-R2x-Gb8pCRdDtOoAiGaD3xg9uNijSC0MlT5OW01rbntmejZKQ0ca9XrMBw0aK.png';
 import LocationPill from '../assets/components/locationPill.tsx';
 import MainGuest from '../assets/components/MainGuest.tsx';
-
+import DateLoc from '../assets/components/dateLoc.tsx';
 export default function Kartu() {
   return(
     <div>
@@ -25,7 +25,8 @@ export default function Kartu() {
           </div>
         </div>
       </div>
-      <MainGuest />
+      <MainGuest/>
+      <DateLoc />
     </div>
   )
 }
