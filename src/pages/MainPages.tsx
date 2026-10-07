@@ -2,6 +2,7 @@ import iconOutline from '../assets/svg/Container(4).svg';
 import iconMusic from '../assets/svg/Icon.svg';
 import image from '../assets/png/AB6AXuBGuohL2q-6sZ9MeVaxn3QRTsro3jzjn_9PTkeqFGCdIkNKC9q-EKCyu6e2fuu2AuoYFLip2sXB508lj6uaCKOSNZ4OmF9Vvu9U9NKkDwUsBRti1OuZjafeic_-XZc29pp_mPlw_sAlsZzZ2cNur27B8UuvhRdVGjdXbx26oyM3r-YfVGtt-R2x-Gb8pCRdDtOoAiGaD3xg9uNijSC0MlT5OW01rbntmejZKQ0ca9XrMBw0aK.png';
 import temple from '../assets/svg/Container(5).svg';
+import RoyalFam from '../assets/components/royalFam.tsx';
 
 export default function MainPages() {
   return (
@@ -24,6 +25,12 @@ export default function MainPages() {
         <img src={temple} alt='' className='w-5' />
         <p className='font-jakarta tracking-widest '>AWIWAHAN AGENG</p>
       </div>
+      <div className='flex gap-6 flex-col mt-6'>
+        <h1 className='text-primary-600 font-jakarta text-center text-4xl font-medium'>ॐ स्वस्त्यस्तु</h1>
+        <h1 className='text-primary-900 font-garamond italic text-center text-4xl'>"Om Swastyastu"</h1>
+      </div>
+      <div className='h-1 rounded-full w-20 bg-primary-300 mx-auto mt-10' />
+      <RoyalFam />
     </div>
   )
 }
