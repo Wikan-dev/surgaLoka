@@ -3,6 +3,7 @@ import iconMusic from '../assets/svg/Icon.svg';
 import image from '../assets/png/AB6AXuBGuohL2q-6sZ9MeVaxn3QRTsro3jzjn_9PTkeqFGCdIkNKC9q-EKCyu6e2fuu2AuoYFLip2sXB508lj6uaCKOSNZ4OmF9Vvu9U9NKkDwUsBRti1OuZjafeic_-XZc29pp_mPlw_sAlsZzZ2cNur27B8UuvhRdVGjdXbx26oyM3r-YfVGtt-R2x-Gb8pCRdDtOoAiGaD3xg9uNijSC0MlT5OW01rbntmejZKQ0ca9XrMBw0aK.png';
 import temple from '../assets/svg/Container(5).svg';
 import RoyalFam from '../assets/components/royalFam.tsx';
+import engagedImage from '../assets/webp/royal_balinese_wedding_couple_in_payas_agung_attire.webp';
 
 export default function MainPages() {
   return (
@@ -31,6 +32,15 @@ export default function MainPages() {
       </div>
       <div className='h-1 rounded-full w-20 bg-primary-300 mx-auto mt-10' />
       <RoyalFam />
+      <div className='relative overflow-hidden rounded-2xl relative my-10'>
+        <img src={engagedImage} className='w-full rounded-2xl' />
+        <div className='absolute inset-0 bg-linear-to-b from-white/0 to-black/70 z-10' />
+        <div className='absolute inset-1 z-10 h-fit mt-auto mb-10 px-7 text-white text-center flex flex-col gap-4'>
+          <h1 className='text-primary-200 font-jakarta tracking-widest text-2xl'>RAHINA SUKRA PALING MATAL</h1>
+          <p className='font-playfair text-primary-50 text-5xl'>Jumat, 24 Oktober 2026</p>
+          <p className='font-garamond text-3xl italic'>Puri Agung Ubud, Gianyar-Bali</p>
+        </div>
+      </div>
     </div>
   )
 }
