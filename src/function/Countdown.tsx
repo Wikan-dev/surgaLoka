@@ -19,9 +19,27 @@ export default function Countdown({ targetDate }:CountdownProps ) {
   const minutes = Math.floor((timeLeft % 3600) / 60)
   const seconds = timeLeft % 60;
 
+  const targetDateData = [
+    { nama: 'Hari', data: days },
+    { nama: 'Jam', data: hours },
+    { nama: 'Menit', data: minutes },
+    { nama: 'Detik', data: seconds },
+  ];
+
   return ( 
-    <div>
-      hari: {days}, jam: {hours}, menit: {minutes}, detik: {seconds} 
+    <div className='bg-primary-50 p-5 rounded-2xl mt-10 shadow-xl/20'>
+       <div className='flex flex-row gap-3 justify-center'>
+        <img src={timeIcon} className='w-5' />
+        <h1 className='font-jakarta text-primary-700 text-lg tracking-widest'>MENGHITUNG HARI BAIK</h1>
+      </div>
+      <div className='grid grid-cols-4 gap-5'>
+        {targetDateData.map((date, i) => (
+          <div key={i} className='font-playfair text-center bg-white py-5 rounded-2xl text-primary-600 mt-10'>
+            <h1 className='text-5xl'>{date.data}</h1>
+            <h1 className='text-2xl'>{date.nama}</h1>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
