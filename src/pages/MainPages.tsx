@@ -4,8 +4,11 @@ import image from '../assets/png/AB6AXuBGuohL2q-6sZ9MeVaxn3QRTsro3jzjn_9PTkeqFGC
 import temple from '../assets/svg/Container(5).svg';
 import RoyalFam from '../assets/components/royalFam.tsx';
 import engagedImage from '../assets/webp/royal_balinese_wedding_couple_in_payas_agung_attire.webp';
+import Countdown from '../function/Countdown.tsx'
 
 export default function MainPages() {
+  const targetTime = "2026-12-31T23:59:59";
+
   return (
     <div>
       <header className='relative z-50 -mx-10 -mt-3 px-10 pt-3 pb-5 drop-shadow-md/10 flex justify-between bg-white'>
@@ -32,7 +35,7 @@ export default function MainPages() {
       </div>
       <div className='h-1 rounded-full w-20 bg-primary-300 mx-auto mt-10' />
       <RoyalFam />
-      <div className='relative overflow-hidden rounded-2xl relative my-10'>
+      <div className='overflow-hidden rounded-2xl relative my-10'>
         <img src={engagedImage} className='w-full rounded-2xl' />
         <div className='absolute inset-0 bg-linear-to-b from-white/0 to-black/70 z-10' />
         <div className='absolute inset-1 z-10 h-fit mt-auto mb-10 px-7 text-white text-center flex flex-col gap-4'>
@@ -41,6 +44,7 @@ export default function MainPages() {
           <p className='font-garamond text-3xl italic'>Puri Agung Ubud, Gianyar-Bali</p>
         </div>
       </div>
+      <Countdown targetDate={targetTime} />
     </div>
   )
 }
