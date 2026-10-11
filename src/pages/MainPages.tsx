@@ -5,6 +5,7 @@ import temple from '../assets/svg/Container(5).svg';
 import RoyalFam from '../assets/components/royalFam.tsx';
 import engagedImage from '../assets/webp/royal_balinese_wedding_couple_in_payas_agung_attire.webp';
 import Countdown from '../function/Countdown.tsx'
+import RangkaianAcara from '../view/rangkaianAcara.tsx';
 
 export default function MainPages() {
   const targetTime = "2026-12-31T23:59:59";
@@ -45,6 +46,7 @@ export default function MainPages() {
         </div>
       </div>
       <Countdown targetDate={targetTime} />
+      <RangkaianAcara />
     </div>
   )
 }
